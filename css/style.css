@@ -1,0 +1,151 @@
+:root {
+  --background: #d9d9d9;
+  --secBackground: #f8f8f8;
+  --text: #222;
+  --green: #5eab28;
+}
+
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: var(--text);
+  background-color: var(--background);
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  padding: 50px;
+}
+
+.container-left {
+  width: 350px;
+  border-radius: 10px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-done {
+  border-radius: 10px;
+  height: 130px;
+  background-color: var(--secBackground);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.details-container {
+  display: flex;
+  justify-content: space-between;
+}
+.done-text {
+  color: var(--text);
+  font-size: 32px;
+  font-family: "Prosto One";
+}
+#numbers {
+  font-family: "Prosto One";
+  font-size: 28px;
+}
+#progressBar {
+  width: 100%;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+#progress {
+  width: 0%;
+  height: 15px;
+  background-color: var(--green);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.container-text-form {
+  height: 300px;
+  background-color: var(--secBackground);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.textarea {
+  width: 75%;
+  padding: 10px;
+}
+textarea {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: var(--secBackground);
+  resize: none;
+}
+#taskInput {
+  display: none;
+}
+.done-button {
+  background-color: var(--green);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.done-button img {
+  width: 15px;
+  height: 15px;
+}
+.container-todo {
+  width: 500px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.todo-title {
+  color: var(--text);
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-family: "Prosto One";
+}
+.todo-list {
+  display: flex;
+  max-height: 450px;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+}
+.task input {
+  width: 20px;
+  height: 20px;
+}
+.completed p {
+  text-decoration: line-through;
+}
+.list-element {
+  display: flex;
+  color: var(--text);
+  padding: 20px;
+  background-color: var(--secBackground);
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  border-radius: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.list-element img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Планер</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container-left">
+        <div class="container-done">
+          <div class="details-container">
+            <div class="details">
+              <p class="done-text">Выполнено</p>
+            </div>
+            <div class="stats-numbers">
+              <div id="numbers">0 / 0</div>
+            </div>
+          </div>
+          <div id="progressBar">
+            <div id="progress"></div>
+          </div>
+        </div>
+        <form class="container-text-form">
+          <input name="text" id="taskInput" class="input-text" />
+          <textarea
+            class="textarea"
+            oninput="document.querySelector('input#taskInput').value = this.value;"
+            placeholder="Введите задачу"
+          ></textarea>
+          <button type="submit" id="newTask" class="done-button">
+            <img src="img/Group 3.png" alt="" />
+          </button>
+        </form>
+      </div>
+      <div class="container-todo">
+        <div class="todo-title">
+          <p>Список дел:</p>
+        </div>
+        <ul id="todo-list" class="todo-list"></ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  </body>
+</html>
